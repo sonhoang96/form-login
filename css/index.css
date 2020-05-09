@@ -5,6 +5,31 @@
     box-sizing: border-box;
 }
 
+span#user {
+    color: #6c63ff;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+span#user:before,span#user:after {content: '-';color: #5c5d5c;}
+
+h2.welcome.error{
+    background: #6a68f5;
+    color: white;
+    border-radius: 10px;
+    text-transform: lowercase;
+    font-size: 1rem;
+}
+h2.welcome.success{
+    background: #6a68f5;
+    color: white;
+    border-radius: 10px;
+    text-transform: lowercase;
+    font-size: 1rem;
+}
+
 footer {
     font-weight: 700;
     color: gray;
@@ -94,6 +119,7 @@ input.input {
     margin: 20px 0;
     padding: 10px;
     border-bottom: 2px solid gray;
+    transition: 0.3s;
 }
 
 .form-login-input::before,.form-login-input::after {
@@ -132,15 +158,24 @@ h2.welcome {
     font-size: 2.5rem;
     text-transform: uppercase;
     color: #505050;
-    margin: 15px 0;
+    height: 60px;
+    line-height: 60px;
 }
 
 form {
     width: 500px;
     margin-bottom: 60px;
+    transition: 0.5s;
 }
 
-img {width: 300px;}
+img {
+    width: 300px;
+}
+img.success{
+    max-width: 300px;
+    max-height: 350px;
+    clip-path: circle(at 50% 50%);
+}
 
 .form-login {
     display: flex;
@@ -159,6 +194,7 @@ img {width: 300px;}
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.3s;
 }
 
 .container {
@@ -167,6 +203,12 @@ img {width: 300px;}
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 0 1.5rem;
+}
+
+.container.success {
+    display: flex;
+    justify-content: center;
+    padding: 0;
 }
 
 body {
