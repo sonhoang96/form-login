@@ -99,6 +99,7 @@ function formSubmit(event){
 					form.firstElementChild.classList.add('success');
 					form.firstElementChild.setAttribute('src',`image/avatar-${randomAvatar}.jpg`);
 					form.style.opacity = 1;
+					form.style.width = '1000px';
 
 				}, 500);
 
